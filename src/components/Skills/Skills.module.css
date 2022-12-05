@@ -1,0 +1,83 @@
+.skills {
+  display: inline-block;
+  width: 42%;
+  vertical-align: top;
+}
+.skillsTitle {
+  font: 600 33px/40px Montserrat, arial, helvetica, sans-serif;
+  color: #0094ff;
+  margin-bottom: 10px;
+}
+.skills > p {
+  font: 400 33px/40px Montserrat, arial, helvetica, sans-serif;
+  margin-top: 0;
+}
+.skillsList {
+  display: inline-block;
+  list-style-type: none;
+  width: 42%;
+  padding: 5px 0 0 110px;
+  margin-bottom: 87px;
+}
+.skillsList > li {
+  font: 600 23px/28px Montserrat, arial, helvetica, sans-serif;
+  color: #adadb9;
+}
+.skillsNum {
+  color: #ffc700;
+}
+.skillsList > p {
+  font: 400 23px/28px Montserrat, arial, helvetica, sans-serif;
+  margin-top: 6px;
+}
+.userLink {
+  font-weight: 500;
+  color: #0094ff;
+  text-decoration: none;
+  transition: 1s;
+}
+.userLink:hover {
+  color: #ffc700;
+}
+@media (max-width: 1600px) {
+  .skills > p {
+    font: 400 28px/38px Montserrat, arial, helvetica, sans-serif;
+  }
+  .skillsList > p {
+    font: 400 20px/28px Montserrat, arial, helvetica, sans-serif;
+  }
+}
+@media (max-width: 910px) {
+  .skills {
+    display: block;
+    width: auto;
+  }
+  .skills > p {
+    font: 400 22px/34px Montserrat, arial, helvetica, sans-serif;
+  }
+  .skillsList {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+}
+@media (max-width: 780px) {
+  .skillsTitle {
+    font-size: 28px;
+  }
+}
+@media (max-width: 595px) {
+  .skillsTitle {
+    font: 600 18px/22px Montserrat, arial, helvetica, sans-serif;
+    margin-bottom: 2px;
+  }
+  .skills > p {
+    font: 400 18px/22px Montserrat, arial, helvetica, sans-serif;
+  }
+  .skillsList > li {
+    font: 600 15px/19px Montserrat, arial, helvetica, sans-serif;
+  }
+  .skillsList > p {
+    font: 400 15px/19px Montserrat, arial, helvetica, sans-serif;
+  }
+}

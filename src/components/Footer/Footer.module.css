@@ -1,0 +1,116 @@
+.footer {
+  background: #2f2f38;
+  font-family: Montserrat;
+  color: #adadb9;
+  padding: 6% 19.5% 7% 17.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer > div {
+  display: inline-block;
+}
+.footerTitle {
+  width: 43%;
+}
+.footerTitle > h1 {
+  font: 500 33px/40px Montserrat, arial, helvetica, sans-serif;
+  color: #dfdfe6;
+  margin: 16px 0;
+}
+.footerTitle > p {
+  font: 500 23px/28px Montserrat, arial, helvetica, sans-serif;
+  width: 85%;
+}
+.footerMenu > p, .footerContacts > p {
+  font: 500 23px/33px Montserrat, arial, helvetica, sans-serif;
+  color: #dfdfe6;
+}
+.footerMenu > ol {
+  list-style-type: none;
+  padding: 0;
+}
+.footerLink {
+  font: 500 23px/36px Montserrat, arial, helvetica, sans-serif;
+  text-decoration: none;
+  transition: 1s;
+  color: #adadb9;
+  scroll-behavior: smooth;
+}
+.footerContacts {
+  width: 24%;
+}
+.footerContacts > a {
+  font: 500 23px/33px Montserrat, arial, helvetica, sans-serif;
+  color: #dfdfe6;
+  text-decoration: none;
+  transition: 1s;
+}
+.footerContacts > a:hover {
+  color: #ffc700;
+}
+@media (max-width: 1900px) {
+  .footer {
+    padding: 7% 14.5% 8% 11.5%;
+  }
+}
+@media (max-width: 1600px) {
+  .footer {
+    padding: 8% 9.5% 9% 6.5%;
+  }
+}
+@media (max-width: 1100px) {
+  .footerTitle > h1 {
+    font: 500 28px/38px Montserrat, arial, helvetica, sans-serif;
+  }
+  .footerTitle > p, .footerMenu > p, .footerContacts > p {
+    font: 500 20px/26px Montserrat, arial, helvetica, sans-serif;
+  }
+  .footerLink {
+    font: 500 20px/36px Montserrat, arial, helvetica, sans-serif;
+  }
+  .footerContacts > a {
+    font: 500 20px/33px Montserrat, arial, helvetica, sans-serif;
+  }
+}
+@media (max-width: 910px) {
+  .footer, .footer > div:first-child {
+    display: block;
+  }
+  .footerTitle {
+    width: auto;
+  }
+  .footerMenu {
+    width: 60%;
+  }
+  .footerContacts {
+    vertical-align: top;
+    width: 40%;
+  }
+}
+@media (max-width: 595px) {
+  .footer > div {
+    display: block;
+    width: auto;
+  }
+  .footerTitle > h1 {
+    font: 500 18px/22px Montserrat, arial, helvetica, sans-serif;
+    margin-bottom: 0;
+  }
+  .footerTitle > p {
+    font: 500 15px/19px Montserrat, arial, helvetica, sans-serif;
+    margin: 4px 0 12px 0;
+    width: auto;
+  }
+  .footerMenu {
+    text-align: right;
+  }
+  .footerMenu > p, .footerContacts > p {
+    font: 500 15px/19px Montserrat, arial, helvetica, sans-serif;
+  }
+  .footerMenu > ol {
+    margin: 0 0 10px 0;
+  }
+  .footerLink, .footerContacts > a {
+    font: 500 15px/24px Montserrat, arial, helvetica, sans-serif;
+  }
+}

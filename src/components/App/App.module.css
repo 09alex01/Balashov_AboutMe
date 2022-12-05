@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.menuContacts, .menuToggle, .menuBtn, .userText > span {
+  display: none;
+}
+.wrap {
+  margin: auto;
+  width: 65%;
+  font-family: Montserrat;
+}
+header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 47px;
+}
+.logo,.menu {
+  display: inline-block;
+}
+.logo {
+  width: 75px;
+  height: 32px;
+  background-size: contain;
+}
+.menuItem {
+  font: 500 17px/18px Montserrat, arial, helvetica, sans-serif;
+  color: #adad89;
+  text-decoration: none;
+  margin-right: 70px;
+}
+.menuItem:last-child {
+  margin-right: 0;
+}
+.user {
+  margin-bottom: 100px;
+}
+.userAvatar, .userTitle {
+  display: inline-block;
+}
+.userAvatar {
+  width: 225px;
+  height: 225px;
+}
+.userTitle {
+  font: 700 90px/93px Montserrat, arial, helvetica, sans-serif;
+  color: #83838e;
+  padding-left: 68px;
+  margin-bottom: 62px;
+}
+.userTitle2 {
+  color: #ffc700;
+}
+.userInfo {
+  font: 400 33px/41px Montserrat, arial, helvetica, sans-serif;
+  margin: 0 0 24px 0;
+}
+.userBio {
+  font-weight: 500;
+  color: #0094ff;
+}
+.userText {
+  font: 400 23px/44px Montserrat, arial, helvetica, sans-serif;
+  margin: 0 0 4px 0;
+}
+.userLink {
+  font-weight: 500;
+  color: #0094ff;
+  text-decoration: none;
+  transition: 1s;
+}
+.userLink:hover {
+  color: #ffc700;
+}
+.userIcon {
+  position: relative;
+  top: 5px;
+  z-index: -1;
+}
+@keyframes move {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+.arrow {
+  width: 55px;
+  height: 30px;
+  background: no-repeat url('./arrow.svg');
+  background-size: contain;
+  animation: move infinite 2s ease-in-out;
+  margin-bottom: 110px;
+}
+.repos {
+  display: inline-block;
+  width: 42%;
+  vertical-align: top;
+}
+.title {
+  font: 600 33px/40px Montserrat, arial, helvetica, sans-serif;
+  color: #0094ff;
+  margin-bottom: 10px;
+}
+.repos > p {
+  font: 400 33px/40px Montserrat, arial, helvetica, sans-serif;
+  margin-top: 0;
+}
+.list {
+  display: inline-block;
+  width: 42%;
+  min-height: 524px;
+}
+.list > ol {
+  list-style-type: none;
+  padding: 5px 0 0 110px;
+}
+.list > ol > li {
+  margin-bottom: 30px;
+}
+.listLink {
+  font: 600 23px/28px Montserrat, arial, helvetica, sans-serif;
+  color: #83838e;
+  text-decoration: none;
+  transition: 1s;
+}
+.listLink:hover{
+  color: #ffc700;
+}
+.listText {
+  font: 400 16px/20px Montserrat, arial, helvetica, sans-serif;
+  color: #83838e;
+  margin: 0 0 16px 0;
+}
+.repoLanguageIcon {
+  width: 16px;
+  height: 16px;
+  background-color: #696969;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.repolanguage-html {
+  background-color: #e34c26;
+}
+.repolanguage-css {
+  background-color: #563d7c;
+}
+.repolanguage-javascript {
+  background-color: #f1e05a;
+}
+.repolangage-typescript {
+  background-color: #2f72bc;
+}
+.repoLanguageIcon + p {
+  padding: 0 14px 0 4px;
+  color: #83838e;
+  display: inline-block;
+  margin: 0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.cooperation {
+  margin-bottom: 194px;
+}
+.cooperation > p {
+  font: 400 33px/40px Montserrat, arial, helvetica, sans-serif;
+  margin: 0 0 24px 0;
+}
+.cooperationLink {
+  display: block;
+  font: 400 33px/40px Montserrat, arial, helvetica, sans-serif;
+  color: #0094ff;
+  transition: 1s;
+  padding-top: 44px;
+}
+.cooperationLink:hover {
+  color: #ffc700;
+}
+@media (max-width: 1900px) {
+  .wrap {
+    width: 77%;
+  }
+}
+@media (max-width: 1600px) {
+  .wrap {
+    width: 86%;
+  }
+}
+@media (max-width: 1235px) {
+  .userTitle {
+    font: 700 85px/93px Montserrat, arial, helvetica, sans-serif;
+  }
+  .userInfo, .repos > p, .cooperationLink {
+    font: 400 28px/38px Montserrat, arial, helvetica, sans-serif;
+  }
+  .userText {
+    font: 400 20px/38px Montserrat, arial, helvetica, sans-serif;
+  }
+  .list {
+    width: 57%;
+  }
+  .cooperation > p {
+    font: 400 26px/38px Montserrat, arial, helvetica, sans-serif;
+  }
+}
+@media (max-width: 910px) {
+  .menuItem {
+    margin-right: 50px;
+  }
+  .user, .arrow {
+    margin-bottom: 70px;
+  }
+  .userTitle {
+    padding-left: 30px;
+  }
+  .userInfo, .repos > p, .cooperationLink, .cooperation > p {
+    font: 400 22px/34px Montserrat, arial, helvetica, sans-serif;
+  }
+  .userText {
+    font: 400 17px/34px Montserrat, arial, helvetica, sans-serif;
+  }
+  .repos, .list {
+    display: block;
+    width: auto;
+  }
+  .list > ol {
+    padding: 0;
+  }
+  .cooperation {
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 780px) {
+  .wrap {
+    width: 88%;
+  }
+  header {
+    margin-bottom: 0;
+  }
+  .user, .arrow {
+    margin-bottom: 62px;
+  }
+  .userAvatar {
+    width: 180px;
+    height: 180px;
+  }
+  .userTitle {
+    font: 700 60px/66px Montserrat, arial, helvetica, sans-serif;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .userText > span {
+    display: inline;
+  }
+  .title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 595px) {
+  header {
+    padding: 28px 0;
+  }
+  .logo {
+    width: 57px;
+    height: 26px;
+    z-index: 2;
+  }
+ .menuBtn {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 33px;
+   left: 82%;
+   width: 39px;
+   height: 12px;
+   z-index: 1;
+  }
+  .menuBtn > span,
+  .menuBtn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #82828e;
+  }
+  .menuBtn > span::after {
+    content: '';
+    top: 6px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 42% 0 0;
+    list-style: none;
+    text-align: center;
+    transition: 1s;
+  }
+  .menuItem {
+    display: block;
+    font: 600 18px/22px Montserrat, arial, helvetica, sans-serif;
+    color: #0094ff;
+    margin: 0 0 32px 0;
+  }
+  .menuContacts {
+    display: block;
+    font: 600 18px/22px Montserrat, arial, helvetica, sans-serif;
+    color: #0094ff;
+    padding-top: 73px;
+  }
+  .menuContacts > a {
+    font: 400 15px/19px Montserrat, arial, helvetica, sans-serif;
+    color: #adadb9;
+    text-decoration: none;
+  }
+  .menuToggle:checked ~ .menuBtn > span {
+    transform: rotate(45deg);
+  }
+  .menuToggle:checked ~ .menuBtn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .menuToggle:checked ~ .menu {
+    visibility: visible;
+    top: 0;
+    background-color: white;
+  }
+  .userTitle {
+    font: 700 45px/47px Montserrat, arial, helvetica, sans-serif;
+  }
+  .userInfo, .repos > p, .cooperationLink, .cooperation > p {
+    font: 400 17px/20px Montserrat, arial, helvetica, sans-serif;
+  }
+  .userText {
+    font: 400 15px/19px Montserrat, arial, helvetica, sans-serif;
+  }
+  .arrow {
+    height: 18px;
+    width: 30px;
+  }
+  .title {
+    font: 600 18px/22px Montserrat, arial, helvetica, sans-serif;
+    margin-bottom: 2px;
+  }
+  .repos > p {
+    font: 400 18px/22px Montserrat, arial, helvetica, sans-serif;
+  }
+  .list {
+    min-height: 450px;
+  }
+  .listLink {
+    font: 700 15px/19px Montserrat, arial, helvetica, sans-serif;
+  }
+  .listText{
+    font: 400 11px/14px Montserrat, arial, helvetica, sans-serif;
+    margin: 0;
+  }
+  .repoLanguageIcon {
+    width: 10px;
+    height: 10px;
+  }
+  .repoLanguageIcon + p {
+    font: 400 11px/14px Montserrat, arial, helvetica, sans-serif;
+  }
+  .cooperation {
+    margin-bottom: 108px;
+  }
+  .cooperationLink {
+    padding-top: 6px;
+  }
+}
